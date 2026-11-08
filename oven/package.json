@@ -1,0 +1,45 @@
+{
+  "name": "@ohmyqt/oven",
+  "version": "0.0.1",
+  "description": "Bun based bundler utility",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dirs": "for dir in ./src ./dist ./test ./util ./types; do mkdir -p $dir; done",
+    "ts": "cp ../../misc/tsconfig.json ./;",
+    "init": "bun run dirs && bun run ts;"
+  },
+  "keywords": [
+    "js",
+    "ts",
+    "bun"
+  ],
+  "author": "MARKjotep",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MARKjotep/-coff-r.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MARKjotep/-coff-r/issues"
+  },
+  "homepage": "https://github.com/MARKjotep/-coff-r#readme",
+  "dependencies": {
+    "rollup": "^4.68.0",
+    "rollup-plugin-dts": "^6.5.1",
+    "@rollup/plugin-alias": "^6.0.1",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-commonjs": "^29.0.3",
+    "@typescript/typescript6": "^6.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

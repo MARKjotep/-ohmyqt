@@ -1,0 +1,38 @@
+{
+  "name": "@ohmyqt/u",
+  "version": "0.0.1",
+  "description": "Ohmyqt utility package",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dirs": "for dir in ./src ./dist ./test ./util ./types; do mkdir -p $dir; done",
+    "ts": "cp ../../misc/tsconfig.json ./;",
+    "init": "bun run dirs && bun run ts;"
+  },
+  "keywords": [
+    "js",
+    "ts",
+    "bun"
+  ],
+  "author": "MARKjotep",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MARKjotep/-ohmyqt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MARKjotep/-ohmyqt/issues"
+  },
+  "homepage": "https://github.com/MARKjotep/-ohmyqt#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohmyqt/oven": "link:@ohmyqt/oven"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
